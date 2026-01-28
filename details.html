@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>마라탕 밀키트 | 마켓컬리</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="band_banner">
+        <div class="msg">  <!-- div묶기 -->
+            <a href="#">지금 가입하고 최대1만원 받아가세요</a>
+            <a href="#" id="close_btn">X</a> <!-- 닫기버튼도 a주기 -->
+        </div>
+    </div>
+    <div id="wrap"> <!-- 시작에서 wrap넣기 띠배너x -->
+        <header>
+            <div class="h_top"> <!-- div묶기 -->
+                <ul class="lnb"><!-- lnb:class -->
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </div>
+            <div id="m_header">
+                <div class="logo_category"> <!-- logo_category:class -->
+                    <h1><a href="#" id="logo"><img src="./images/logo.png" alt=""></a></h1><!-- logh도h1주기 -->
+                    <ul class="cate"> <!-- ul묶기 h1x /a달기-->
+                        <!-- on/off기능이 있는 탭메뉴등은 on대상에만 active(활성화)이름설정하기 -->
+                        <li class="active"><a href="#">마켓컬리</a></li>
+                        <li><a href="#">뷰티컬리</a></li>
+                    </ul>
+                </div>
+                <div class="search_box"> <!-- search_box:class -->
+                    <p class="search_txt">검색어를 입력해주세요</p><!-- class달기 -->
+                    <a href="#" class="search_btn"><img src="./images/search.png" alt="검색하기"></a> <!-- a/class달기 -->
+                </div>
+                <ul class="lnb_user"> <!-- lnb_user:class / ul로묶기-->
+                    <li><a href="#" class="location"><img src="./images/map.png" alt="매장찾기"></a></li>
+                    <li><a href="#" class="favorit"><img src="./images/like.png" alt="관심상품보기"></a></li>
+                    <li><a href="#" class="shoppingbox"><img src="./images/cart.png" alt="장바구니"></a></li>
+                </ul>
+            </div>
+            <div id="b_header">
+                <!-- 햄버거랑..카테고리가..없다..확인좀!!! -->
+                <div id="category_menu"> 
+                    <a href="#">
+                        <img src="./images/hamberger.png" alt="전체메뉴">
+                        <span>카테고리</span>
+                        <!-- img 인라인이므로 형제는 인라이만 오는게 기본 -->
+                    </a>
+                    <!-- 마우스올렸을 때 펼쳐지는 메뉴 -->
+                    <ul class="menu_open">
+                        <li><a href="#">설선물특가</a></li>
+                        <li><a href="#">더퍼플셀렉션</a></li>
+                    </ul>
+                </div>
+                <nav><!-- nav는 gnb -->
+                    <ul id="gnb"><!-- 각자들어가는거다르니까 각자a -->
+                        <li><a href="#">베스트</a></li>
+                        <li><a href="#">세일</a></li>
+                        <li><a href="#">패션</a></li>
+                        <li><a href="#">리빙</a></li>
+                        <li><a href="#">신상</a></li>
+                        <li><a href="#">특가/혜택</a></li>
+                    </ul>
+                </nav>
+                <a href="#" id="shipping">
+                    <em>샛별•하루</em>배송안내
+                </a>
+            </div>
+        </header>
+        <main>
+            <!-- 1.상품주문 -->
+            <div id="product_container">
+                <!-- 1-1 썸네일 슬라이드 -->
+                <!-- 뷰포트영역-> 전체너비-> 개별슬라이드-> 공통버튼 -->
+                <div class="thumnail_viewport"><!-- w430 -->
+                    <div class="thumnail_full"><!-- w860 -->
+                        <img src="./images/main1.jpg" alt="1번 썸네일">
+                        <img src="./images/main2.jpg" alt="2번 썸네일">
+                    </div>
+                    <a href="#" class="prev"><img src="./images/prev.png" alt="이전 상품보기"></a>
+                    <a href="#" class="prev"><img src="./images/next.png" alt="다음 상품보기"></a>
+                </div>
+            </div>
+                <!-- 1-2 상품 주문 -->
+                <div class="right_contents">
+                    <P>마라탕 밀키트(1개입/3개입)</P>
+                    <h1>매콤한 마라탕과 간단한 밀키트의 조합</h1>
+                    <p>원산지 : 상품설명 / 상세정보 참조</p>
+                    <p class="price"><em>11,800원</em></p>
+                    <dl class="info">
+                        <dt>배송</dt>
+                        <dd>샛별배송</dd>
+                        <dt>판매자</dt>
+                        <dd>컬리</dd>
+                        <dt>포장타입</dt>
+                        <dd>냉동(종이포함)<br>택배배송은 보호제로 스트리폼을 사용함</dd>
+                    </dl>
+                    <p class="order_price">총<em>0</em>원</p>
+                    <a href="#" id="cart_btn">장바구니 담기</a>
+                </div>
+        </main>>
+            <!-- 2. 상품상세페이지 -->
+            <div id="detail_page"><img src="./images/detail.jpg" alt="">
+            </div>
+        <footer></footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="wilih=device-wilih, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>마켓컬리</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- 띠배너(edge-to + container1050) -->
+    <div class="top_bnr"><!-- edge-to -->
+        <div class="msg"><!-- container1050 -->
+            <p>지금 가입하고 최대1만원 받아가세요</p>
+            <a href="#" class="close_btn">x</a>
+        </div>
+    </div>
+    <!-- 웹 서비스 시작 -->
+    <div id="wrap">
+        <!-- 1.header 2.main 3.footer -->
+        <header>
+            <!-- 1행 -->
+            <div class="h_top">
+                <ul class="lnb">
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </div>
+            <!-- 2행 -->
+            <div class="h_milile">
+                <div class="logo_gategory">
+                    <h1><a href="./index.html"><img src=".//images/logo.png" alt="kurly"></a></h1>
+                    <ul class="cate">
+                        <!-- on/off기능이 있는 탭메뉴등은 on대상에만 active(활성화)이름설정하기 -->
+                        <li class="active"><a href="#">마켓컬리</a></li>
+                        <li><a href="#">뷰티컬리</a></li>
+                    </ul>
+                </div>
+                <div class="search_box">
+                    <p class="search_txt">검색어를 입력해주세요</p>
+                    <a href="#" class="search_btn"><img src="./images/search.png" alt="검색하기"></a>
+                </div>
+                <ul class="lnb_user">
+                    <li class="map"><a href="#"><img src="./images/map.png" alt="매장찾기"></a></li>
+                    <li class="like"><a href="#"><img src="./images/like.png" alt="관심상품보기"></a></li>
+                    <li class="cart"><a href="#"><img src="./images/cart.png" alt="장바구니"></a></li>
+                </ul>
+            </div>
+            <!-- 3행 -->
+            <div class="h_bottom">
+                <div id="category_menu"> 
+                    <a href="#">
+                        <img src="./images/hamberger.png" alt="전체메뉴">
+                        <span>카테고리</span>
+                        <!-- img 인라인이므로 형제는 인라이만 오는게 기본 -->
+                    </a>
+                    <!-- 마우스올렸을 때 펼쳐지는 메뉴 -->
+                    <ul class="menu_open">
+                        <li><a href="#">설선물특가</a></li>
+                        <li><a href="#">더퍼플셀렉션</a></li>
+                    </ul>
+                </div>
+                <nav>
+                    <ul id="gnb">
+                        <li><a href="#">베스트</a></li>
+                        <li><a href="#">세일</a></li>
+                        <li><a href="#">패션</a></li>
+                        <li><a href="#">리빙</a></li>
+                        <li><a href="#">신상</a></li>
+                        <li><a href="#">특가/혜택</a></li>
+                    </ul>
+                </nav>
+                <a href="#" id="dliivery_info">
+                    <em>샛별•하루</em>배송안내
+                </a>
+            </div>
+        </header>
+        <main>
+            <!-- 1.히어로배너 -->
+            <!-- 1-1 뷰포트 영역 -->
+            <div id="slide_wrap"><!-- 1920(full)*370 -->
+                <!-- 1-2 광고배너들 -->
+                <div id="slide_container"><!-- 3840*370 -->
+                    <!-- 1-2-1.개별배너들 -->
+                    <div class="slide" style="background-image: url(./images/banner1.jpg)">
+                        <div class="txt">
+                            <h1>친구 초대하면 친구도 나도 5천원씩</h1>
+                            <p>초대할 때마다 제한없이 5천원 적립</p>
+                        </div>
+                    </div>
+                    <div class="slide" style="background-image: url(./images/banner2.jpg);">
+                        <div class="txt">
+                            <h1>더 할수록 커지느 혜택 다다익선 선물</h1>
+                            <p>빠짐없이 전하는 감사 선물 </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 1-3 배너 위 고정대상들(이전,다음,페이지번호) -->
+                <div class="prev_btn"><img src="./images/prev.png" alt="이전 광고 보기"></div>
+                <div class="next_btn"><img src="./images/next.png" alt="다음 광고 보기"></div>
+                <div class="pgination">
+                    <span class="currnet">01</span>
+                    <span class="all">15</span>
+                </div> 
+            </div>
+            <!-- 2. 특가상품틀 1행4열 -->
+            <section id="special_price_wrap">
+                <!-- 2-1 특가상품 제목틀 /안쪽은반복되니까class-->
+                <div class="title">
+                    <h1>지금 가장 많이 담는 특가</h1>
+                    <p>꼭 담아야할 추천 특가템 최대 60%OFF</p>
+                </div>
+                <!-- 2-2 특가상품 내용틀 -->
+                <ul class="container">
+                    <!-- s:상품 반복 -->
+                    <li class="item">
+                        <a href="./details.html" class="img"><img src="./images/main1.jpg" alt=""></a>
+                        <a href="#" class="cart"><img src="./images/cart2.png" alt="">담기</a>
+                        <a href="./details.html" class="item_contents">
+                            <h2>마라탕 밀키트(1개입/3개입)</h2>
+                            <p class="original_price"><del>13900원</del></p>
+                            <div class="sale_ifo">
+                                <em class="sale_percnet">15%</em>
+                                <span class="selling_price">11,800원~</span>
+                            </div>
+                            <p class="review"><img src="./images/review.png" alt="">9,999+</p>
+                        </a>
+                    </li>
+                    <!-- e:상품 반복 -->
+                    <li class="item">
+                        <a href="#" class="img"><img src="./images/main2.jpg" alt=""></a>
+                        <a href="#" class="cart"><img src="./images/cart2.png" alt="">담기</a>
+                        <a href="#" class="item_contents">
+                            <h2>마라탕 밀키트(1개입/3개입)</h2>
+                            <p class="original_price"><del>13900원</del></p>
+                            <div class="sale_ifo">
+                                <em class="sale_percnet">15%</em>
+                                <span class="selling_price">11,800원~</span>
+                            </div>
+                            <p class="review"><img src="./images/review.png" alt="">9,999+</p>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="img"><img src="./images/main1.jpg" alt=""></a>
+                        <a href="#" class="cart"><img src="./images/cart2.png" alt="">담기</a>
+                        <a href="#" class="item_contents">
+                            <h2>마라탕 밀키트(1개입/3개입)</h2>
+                            <p class="original_price"><del>13900원</del></p>
+                            <div class="sale_ifo">
+                                <em class="sale_percnet">15%</em>
+                                <span class="selling_price">11,800원~</span>
+                            </div>
+                            <p class="review"><img src="./images/review.png" alt="">9,999+</p>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="img"><img src="./images/main2.jpg" alt=""></a>
+                        <a href="#" class="cart"><img src="./images/cart2.png" alt="">담기</a>
+                        <a href="#" class="item_contents">
+                            <h2>마라탕 밀키트(1개입/3개입)</h2>
+                            <p class="original_price"><del>13900원</del></p>
+                            <div class="sale_ifo">
+                                <em class="sale_percnet">15%</em>
+                                <span class="selling_price">11,800원~</span>
+                            </div>
+                            <p class="review"><img src="./images/review.png" alt="">9,999+</p>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+</html>
